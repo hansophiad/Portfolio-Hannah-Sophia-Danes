@@ -9,13 +9,18 @@ COLOURS
 #647E76
 #2C4D43
 */
+/* Universal */
+* {
+  box-sizing: border-box;
+}
 
+/* Text */
 body {
   background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 1.5;
   color: #14141C;
 }
 
@@ -43,17 +48,18 @@ h4 {
   font-weight: 400;
 }
 
-/* NOTE: Images */
+/* Images */
 img {
   width: 100%;
 }
 
+/* Links */
 a {
-  color: #647E76;
+  color: #14141C;
 }
 
 a:visited {
-  color: #647E76;
+  color: #14141C;
 }
 
 a:hover {
@@ -68,13 +74,11 @@ a:active {
   color: #D2E4DD;
 }
 
-/* NOTE: Buttons */
+/* Buttons */
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #D2E4DD;
   color: #14141C;
-  /* needed to override the default link color */
   font-weight: 400;
   padding: 12px;
   border-radius: 0px;
@@ -83,20 +87,115 @@ a:active {
 }
 
 .button:hover {
-  opacity: 0.6;
+  opacity: 1.5;
   color: #14141C;
   font-weight: 700;
 }
 
 .button:active {
-  opacity: 0.6;
+  opacity: 1.5;
   color: #14141C;
   font-weight: 700;
 }
 
 .logo {
-font-family: 'Abril Fatface', cursive;
-font-size: 44px;
-color: #14141C !important;
-text-decoration: none;
+  max-width: 100px;
+}
+
+.social {
+  max-width: 30px;
+  display: inline-block;
+  align-content: center;
+}
+
+/* Layout Styling */
+.container {
+  padding: 0 15px;
+  /* 0 top and bottom, 15px left and right */
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#projects .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #14141C;
+}
+
+#hero h1 {
+  text-align: left;
+}
+
+#hero {
+  background-color: #ffffff;
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+header {
+  background-color: #ffffff;
+  text-align: left;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  display: inline-block;
+}
+
+nav {
+  display: inline-block;
+  width: 100%
+}
+
+main {
+  padding-top: 134px;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #14141C;
+  text-decoration: none
+}
+
+nav>ul>li>a:hover {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #D2E4DD;
+  text-decoration: none
+}
+
+nav>ul>li>a:focus {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #D2E4DD;
+  text-decoration: none
+}
+
+nav>ul>li>a:active {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #D2E4DD;
+  text-decoration: none
+}
+
+footer>ul {
+  list-style-type: none;
+  padding: 0;
+  align-content: center;
 }
