@@ -87,25 +87,22 @@ a:active {
 }
 
 .button:hover {
-  opacity: 1.5;
-  color: #14141C;
-  font-weight: 700;
+  background-color: #a1b2ab;
+  color: #ffffff;
 }
 
 .button:active {
-  opacity: 1.5;
-  color: #14141C;
-  font-weight: 700;
+  background-color: #a1b2ab;
+  color: #ffffff;
 }
 
 .logo {
   max-width: 100px;
 }
 
-.social {
+.social svg {
   max-width: 30px;
-  display: inline-block;
-  align-content: center;
+  text-align: left;
 }
 
 /* Layout Styling */
@@ -133,6 +130,10 @@ a:active {
   padding: 10px 0;
   display: inline-block;
   width: 100%;
+}
+
+#contact {
+  text-align: left;
 }
 
 header {
@@ -194,8 +195,6 @@ nav>ul>li>a:active {
   text-decoration: none
 }
 
-footer>ul {
-  list-style-type: none;
-  padding: 0;
-  align-content: center;
+footer ul li {
+  display: inline-block;
 }
