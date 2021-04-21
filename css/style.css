@@ -97,7 +97,7 @@ a:active {
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 90px;
 }
 
 .social svg {
@@ -132,6 +132,14 @@ a:active {
   width: 100%;
 }
 
+#hero span {
+  display: block;
+}
+
+#intro span {
+  display: block;
+}
+
 #contact {
   text-align: left;
 }
@@ -151,7 +159,7 @@ nav {
 }
 
 main {
-  padding-top: 134px;
+  padding-top: 157px;
 }
 
 nav>ul {
@@ -197,4 +205,126 @@ nav>ul>li>a:active {
 
 footer ul li {
   display: inline-block;
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Media Queries */
+
+/* Medium */
+@media only screen and (min-width: 640px) {
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 13px;
+  }
+
+  main {
+    padding-top: 105px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about h3 {
+    margin-top: 0;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .logo {
+    max-width: 100px;
+  }
+
+  .social svg {
+    max-width: 32px;
+    text-align: left;
+  }
+}
+
+/* Large */
+@media only screen and (min-width: 1024px) {
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 16px;
+  }
+
+  .col-lg-4 {
+    width: 33%;
+  }
+
+  .col-lg-8 {
+    width: 67%;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body {
+    font-size: 17px;
+  }
+
+  .logo {
+    max-width: 110px;
+  }
+
+  .social svg {
+    max-width: 36px;
+    text-align: left;
+  }
+}
+
+/* Extra Large */
+@media only screen and (min-width: 1440px) {
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 20px;
+  }
+
+  .col-md-4 {
+    width: 33%;
+  }
+
+  .col-md-8 {
+    width: 67%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .logo {
+    max-width: 120px;
+  }
+
+  .social svg {
+    max-width: 40px;
+    text-align: left;
+  }
 }
