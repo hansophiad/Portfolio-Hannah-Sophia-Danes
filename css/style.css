@@ -83,7 +83,7 @@ a:active {
   padding: 12px;
   border-radius: 0px;
   text-decoration: none;
-  transition: 0.2s;
+  transition: 0.2s background-colour, 0.2s color;
 }
 
 .button:hover {
@@ -327,4 +327,32 @@ footer ul li {
     max-width: 40px;
     text-align: left;
   }
+}
+
+/* CSS Animation */
+@keyframes color-change {
+  0% {fill: #ffeaa7;}
+  50% {fill: #CDB877;}
+  100% {fill: #9b884a;}
+}
+
+.sky {
+  animation-duration: 5s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes sun-move {
+  from {transform: translate(40,600px);}
+  to {transform: translate(200px,600px);}
+}
+
+.sun {
+  animation-duration: 9s;
+  animation-name: sun-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
