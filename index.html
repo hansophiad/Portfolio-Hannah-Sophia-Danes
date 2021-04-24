@@ -9,20 +9,24 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <i class="fal fa-bars"></i>
 </head>
 
 <body id="index">
 
   <header>
     <div class="container">
-      <a href="index.html"><img src="img/about/logo.jpg" alt="Logo" class="logo"></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html"><img src="img/about/logo.jpg" alt="Logo" class="logo"></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fal fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -92,27 +96,35 @@
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2001 1223">
               <defs>
                 <linearGradient id="linear-gradient" x1="0.661" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-                  <stop offset="0" stop-color="#cdb877"/>
-                  <stop offset="1" stop-color="#fff"/>
-                  <stop offset="1" stop-color="#cdb877"/>
+                  <stop offset="0" stop-color="#cdb877" />
+                  <stop offset="1" stop-color="#fff" />
+                  <stop offset="1" stop-color="#cdb877" />
                 </linearGradient>
                 <linearGradient id="linear-gradient-2" x1="0.5" y1="0.034" x2="0.432" y2="0.897" gradientUnits="objectBoundingBox">
-                  <stop offset="0" stop-color="#cdb877"/>
-                  <stop offset="1" stop-color="#fff"/>
+                  <stop offset="0" stop-color="#cdb877" />
+                  <stop offset="1" stop-color="#fff" />
                 </linearGradient>
                 <clipPath id="clip-Groovy_Landscape">
-                  <rect width="2001" height="1223"/>
+                  <rect width="2001" height="1223" />
                 </clipPath>
               </defs>
               <g id="Groovy_Landscape" data-name="Groovy Landscape" clip-path="url(#clip-Groovy_Landscape)">
-                <rect width="2001" height="1223" fill="url(#linear-gradient)"/>
-                <rect id="Sky_BG" class="sky" data-name="Sky BG" width="2001" height="1223" fill="url(#linear-gradient-2)"/>
-                <path id="Path_5" data-name="Path 5" d="M0-443.879H69.345s74.195-26.547,100.726-14.365c71.869,33,248.791,71.848,285.037,69.849,39.329-2.169,344.614,98.626,344.614,98.626s72.116,11.163,116.549,14.011c71.623,4.591,142.021,0,142.021,0s147.765,15.9,241.132,38c61.813,14.629,134.7-49.937,236.222-52.011C1631.4-291.725,2001-327.4,2001-327.4V359H0Z" transform="translate(0 734.194)" fill="#af9379"/>
-                <path id="Path_4" data-name="Path 4" d="M0,12.692s76.768.134,130.152,24.646c71.869,33,262.3,27.519,312.279,20.88,66.9-8.887,142.509-17.711,212.9,0C725.2,75.794,757.952,39.224,836.062,47.628c45.172,4.86,136.126-11.506,229.493,10.59,61.813,14.629,195.655,82.283,297.174,80.209C1458.485,136.47,2001,173.891,2001,173.891V359H0Z" transform="translate(0 674.194)" fill="#c9ded5" opacity="0.85"/>
-                <path id="Path_3" data-name="Path 3" d="M0,152.708s233.27-21,296.2-24.467S359.8,103.008,493.071,85.3s217.991,26.062,374.839,42.937c75.287,8.1,151.288,5.186,405.085,0,95.756-1.957,204.457-52.276,233.494-70.023,42.843-.82,67.806-24.315,113.74-20.88C1800.078,50.788,2001,114.291,2001,114.291V359H0Z" transform="translate(0 674.194)" fill="#719686"/>
-                <circle id="Ellipse_1" class="sun" data-name="Ellipse 1" cx="200" cy="200" r="200" transform="translate(236 145)" fill="#fff"/>
-                <path id="Path_2" data-name="Path 2" d="M0,152.708s191.518-7.242,254.445-10.713S321.136,94.721,361.11,99.741,517.9,58.186,927.877,61.823,2001,114.291,2001,114.291V359H0Z" transform="translate(0 787)" fill="#3a6954"/>
-                <path id="Path_1" data-name="Path 1" d="M0,128.214s65.3,15.235,128.223,11.765S390.912,54.811,430.885,59.831s42.423,21.337,74.783,6.645C523.175,58.527,836.561-8.438,836.561-8.438s272.855-82.889,345.823-94.007c111.6-17,383.06,51.322,383.06,51.322s108.119,3.012,156.029-15.925C1882.244-130.6,2001-128.173,2001-128.173V359H0Z" transform="translate(0 864)" fill="#221b18"/>
+                <rect width="2001" height="1223" fill="url(#linear-gradient)" />
+                <rect id="Sky_BG" class="sky" data-name="Sky BG" width="2001" height="1223" fill="url(#linear-gradient-2)" />
+                <path id="Path_5" data-name="Path 5"
+                  d="M0-443.879H69.345s74.195-26.547,100.726-14.365c71.869,33,248.791,71.848,285.037,69.849,39.329-2.169,344.614,98.626,344.614,98.626s72.116,11.163,116.549,14.011c71.623,4.591,142.021,0,142.021,0s147.765,15.9,241.132,38c61.813,14.629,134.7-49.937,236.222-52.011C1631.4-291.725,2001-327.4,2001-327.4V359H0Z"
+                  transform="translate(0 734.194)" fill="#af9379" />
+                <path id="Path_4" data-name="Path 4"
+                  d="M0,12.692s76.768.134,130.152,24.646c71.869,33,262.3,27.519,312.279,20.88,66.9-8.887,142.509-17.711,212.9,0C725.2,75.794,757.952,39.224,836.062,47.628c45.172,4.86,136.126-11.506,229.493,10.59,61.813,14.629,195.655,82.283,297.174,80.209C1458.485,136.47,2001,173.891,2001,173.891V359H0Z"
+                  transform="translate(0 674.194)" fill="#c9ded5" opacity="0.85" />
+                <path id="Path_3" data-name="Path 3"
+                  d="M0,152.708s233.27-21,296.2-24.467S359.8,103.008,493.071,85.3s217.991,26.062,374.839,42.937c75.287,8.1,151.288,5.186,405.085,0,95.756-1.957,204.457-52.276,233.494-70.023,42.843-.82,67.806-24.315,113.74-20.88C1800.078,50.788,2001,114.291,2001,114.291V359H0Z"
+                  transform="translate(0 674.194)" fill="#719686" />
+                <circle id="Ellipse_1" class="sun" data-name="Ellipse 1" cx="200" cy="200" r="200" transform="translate(236 145)" fill="#fff" />
+                <path id="Path_2" data-name="Path 2" d="M0,152.708s191.518-7.242,254.445-10.713S321.136,94.721,361.11,99.741,517.9,58.186,927.877,61.823,2001,114.291,2001,114.291V359H0Z" transform="translate(0 787)" fill="#3a6954" />
+                <path id="Path_1" data-name="Path 1"
+                  d="M0,128.214s65.3,15.235,128.223,11.765S390.912,54.811,430.885,59.831s42.423,21.337,74.783,6.645C523.175,58.527,836.561-8.438,836.561-8.438s272.855-82.889,345.823-94.007c111.6-17,383.06,51.322,383.06,51.322s108.119,3.012,156.029-15.925C1882.244-130.6,2001-128.173,2001-128.173V359H0Z"
+                  transform="translate(0 864)" fill="#221b18" />
               </g>
             </svg>
           </div>
@@ -177,6 +189,7 @@
 
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 
 </body>
