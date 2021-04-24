@@ -9,6 +9,9 @@ COLOURS
 #647E76
 #2C4D43
 */
+
+/* BASE CODE BEGIN */
+
 /* Universal */
 * {
   box-sizing: border-box;
@@ -143,22 +146,46 @@ header {
   width: 100%;
 }
 
-nav {
-  display: inline-block;
-  width: 100%
-}
-
 main {
   padding-top: 157px;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+  /* Check this --->
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+*/
+
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -218,6 +245,8 @@ footer ul li {
   margin-bottom: 20px;
 }
 
+/* BASE CODE END */
+
 /* Media Queries */
 /* Medium */
 @media only screen and (min-width: 640px) {
@@ -229,6 +258,21 @@ footer ul li {
 
   main {
     padding-top: 105px;
+  }
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  nav > ul {
+  margin: 1em 0;
+}
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   [class*="col-"] {
