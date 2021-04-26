@@ -287,12 +287,15 @@ footer ul li {
     width: 50%;
   }
 
+  #final img {
+padding-top: 15px; }
+
   #more .button {
     margin-left: 95px;
   }
 
   #introduction .button {
-    margin-left: 95px
+    margin-left: 95px;
   }
 
   #projects .row {
@@ -388,7 +391,11 @@ footer ul li {
   }
 
   #more .button {
-    margin-left: 200px;
+    margin-left: 135px;
+  }
+
+  #introduction .button {
+    margin-left: 135px;
   }
 
   body {
@@ -431,7 +438,7 @@ footer ul li {
     padding-bottom: 40px;
   }
 
-  #gratefruit p, #gratefruit h2 {
+  #gratefruit p, #gratefruit h2, #gratefruit h1 {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -450,7 +457,11 @@ footer ul li {
   }
 
   #more .button {
-    margin-left: 200px;
+    margin-left: 180px;
+  }
+
+  #introduction .button {
+    margin-left: 180px;
   }
 
   body {
