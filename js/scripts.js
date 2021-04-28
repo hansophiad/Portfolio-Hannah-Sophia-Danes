@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 function menuToggle() {
   var x = document.getElementById('myNavtoggle');
 if (x.className === 'navtoggle' && screen.width < 640)
