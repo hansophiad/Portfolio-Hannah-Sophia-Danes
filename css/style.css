@@ -170,7 +170,7 @@ main {
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid #657B72;
+  border-top: 1px solid #D2E4DD;
 }
 
 .navtoggle.responsive li:last-child  {
@@ -288,7 +288,7 @@ footer ul li {
   }
 
   #final img {
-padding-top: 15px; }
+    padding-top: 15px; }
 
   #more .button {
     margin-left: 95px;
