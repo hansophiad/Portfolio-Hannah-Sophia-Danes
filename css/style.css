@@ -59,15 +59,15 @@ a:visited {
 }
 
 a:hover {
-  color: #D2E4DD;
+  color: #647E76;
 }
 
 a:focus {
-  color: #D2E4DD;
+  color: #647E76;
 }
 
 a:active {
-  color: #D2E4DD;
+  color: #647E76;
 }
 
 /* Buttons */
@@ -118,7 +118,7 @@ a:active {
 
 #hero h1 {
   text-align: center;
-  color: #6B887B;
+  color: #647E76;
 }
 
 #hero {
@@ -195,7 +195,7 @@ nav>ul>li>a:hover {
   padding: 15px 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #D2E4DD;
+  color: #647E76;
   text-decoration: none
 }
 
@@ -203,7 +203,7 @@ nav>ul>li>a:focus {
   padding: 15px 15px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #D2E4DD;
+  color: #647E76;
   text-decoration: none
 }
 
@@ -211,13 +211,13 @@ nav>ul>li>a:active {
   padding: 15px 15px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #D2E4DD;
+  color: #647E76;
   text-decoration: none
 }
 
 footer {
   text-align: center;
-  background-color: #d2e4dd;
+  background-color: #D2E4DD;
   padding-top: 15px;
   padding-bottom: 20px;
 }
@@ -479,31 +479,9 @@ padding-top: 15px; }
 }
 
 /* CSS Animation */
-@keyframes color-change {
-  0% {
-    fill: #ffeaa7;
-  }
-
-  50% {
-    fill: #CDB877;
-  }
-
-  100% {
-    fill: #9b884a;
-  }
-}
-
-.sky {
-  animation-duration: 5s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes sun-move {
+@keyframes fullstop-move {
   from {
-    transform: translate(40, 600px);
+    transform: translate(40px, 600px);
   }
 
   to {
@@ -511,9 +489,9 @@ padding-top: 15px; }
   }
 }
 
-.sun {
-  animation-duration: 9s;
-  animation-name: sun-move;
+.fullstop {
+  animation-duration: 1s;
+  animation-name: fullstop-move;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
