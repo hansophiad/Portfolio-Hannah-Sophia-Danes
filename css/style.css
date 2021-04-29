@@ -170,7 +170,7 @@ main {
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid #D2E4DD;
+  border-top: 1px solid #657B72;
 }
 
 .navtoggle.responsive li:last-child  {
